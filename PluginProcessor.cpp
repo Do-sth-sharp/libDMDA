@@ -18,8 +18,12 @@ namespace DMDA {
 		return this->context.get();
 	}
 
+	Context* PluginProcessor::createContext() const {
+		return new Context;
+	}
+
 	void PluginProcessor::initContext() {
-		this->context = std::make_unique<Context>();
+		this->context = std::unique_ptr<Context>(this->createContext());
 		this->vst3Extensions = std::make_unique<Vst3Extensions>(this);
 	}
 }

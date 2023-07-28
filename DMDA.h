@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Macros.h"
-
 #include "Context.h"
 
 #if DMDA_PLUGIN
