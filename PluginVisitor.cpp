@@ -2,7 +2,15 @@
 #include "Macros.h"
 #include "Context.h"
 
+#ifdef _MSC_VER
+#pragma warning(disable : 5105)
+#endif // MSC_VER
+
 #include <pluginterfaces/vst/ivstcomponent.h>
+
+#ifdef _MSC_VER
+#pragma warning(default : 5105)
+#endif // MSC_VER
 
 namespace DMDA {
 	void PluginVisitor::visitVST3Client(
