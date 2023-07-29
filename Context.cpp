@@ -46,11 +46,15 @@ namespace DMDA {
 	}
 
 	void Context::handShake() {
+		JUCE_ASSERT_MESSAGE_THREAD;
 		this->handShaked = true;
+		this->handShakedStateChanged();
 	}
 
 	void Context::handWave() {
+		JUCE_ASSERT_MESSAGE_THREAD;
 		this->handShaked = false;
+		this->handShakedStateChanged();
 	}
 
 	bool Context::isHandShaked() const {

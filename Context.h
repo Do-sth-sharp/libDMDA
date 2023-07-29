@@ -37,6 +37,9 @@ namespace DMDA {
 		void handWave();
 		bool isHandShaked() const;
 
+	protected:
+		virtual void handShakedStateChanged() {};
+
 	private:
 		juce::Array<Listener*, juce::CriticalSection> listeners;
 		std::atomic_bool handShaked = false;
