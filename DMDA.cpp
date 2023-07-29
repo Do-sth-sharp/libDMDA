@@ -1,5 +1,7 @@
 #include "DMDA.h"
 
+#include "Context.cpp"
+
 #if DMDA_PLUGIN
 
 #include "PluginProcessor.cpp"
