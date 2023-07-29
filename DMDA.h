@@ -8,4 +8,7 @@
 #include "PluginProcessor.h"
 
 #else // DMDA_PLUGIN
+
+#include "PluginVisitor.h"
+
 #endif // DMDA_PLUGIN

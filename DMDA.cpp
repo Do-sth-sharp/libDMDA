@@ -6,4 +6,7 @@
 #include "PluginExtensions.cpp"
 
 #else // DMDA_PLUGIN
+
+#include "PluginVisitor.cpp"
+
 #endif // DMDA_PLUGIN
