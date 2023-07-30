@@ -2,6 +2,7 @@
 
 #include "Macros.h"
 #include "Context.h"
+#include "MidiFileContext.h"
 
 #if DMDA_PLUGIN
 

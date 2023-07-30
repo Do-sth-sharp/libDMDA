@@ -1,6 +1,7 @@
 #include "DMDA.h"
 
 #include "Context.cpp"
+#include "MidiFileContext.cpp"
 
 #if DMDA_PLUGIN
 
