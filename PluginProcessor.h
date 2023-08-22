@@ -5,7 +5,7 @@
  * \author  WuChang
  * \email   31423836@qq.com
  * \date    July 2023
- * \version 1.0.0
+ * \version 1.0.1
  * \license	MIT License
  *********************************************************************/
 
@@ -33,6 +33,9 @@ namespace DMDA {
 	 *	// ...
 	 *	};
 	 * @endcode
+	 * 
+	 * And you should call initContext() method in your construct function to
+	 * create the context.
 	 */
 	class PluginProcessor : public juce::AudioProcessor {
 	public:
@@ -62,14 +65,15 @@ namespace DMDA {
 		 */
 		virtual Context* createContext() const;
 
+		/**
+		 * Use this to init DMDA Context. You should call this in your
+		 * construct function.
+		 */
+		void initContext();
+
 	private:
 		std::unique_ptr<Context> context = nullptr;
 		std::unique_ptr<Vst3Extensions> vst3Extensions = nullptr;
-
-		/**
-		 * For internal use.
-		 */
-		void initContext();
 
 		JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PluginProcessor)
 	};
