@@ -8,6 +8,7 @@ Directly Musical Data Access library for VST3 with JUCE.
 ### For plugin
 - Set the `DMDA_PLUGIN` macro to `1` in your build system.
 - Create your plugin processor class inherit from the `PluginProcessor` class.
+- Init the DMDA context in the constructor of your processor class.
 
 ### For host
 - Use the `PluginVisitor` or `PluginHandler` to visit the DMDA context in the plugin.
