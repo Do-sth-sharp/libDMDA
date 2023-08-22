@@ -5,7 +5,7 @@
  * \author  WuChang
  * \email   31423836@qq.com
  * \date    July 2023
- * \version 1.0.1
+ * \version 1.0.2
  * \license	MIT License
  *********************************************************************/
 
@@ -34,7 +34,7 @@ namespace DMDA {
 	 *	};
 	 * @endcode
 	 * 
-	 * And you should call initContext() method in your construct function to
+	 * And you should call initContext() method in your constructor to
 	 * create the context.
 	 */
 	class PluginProcessor : public juce::AudioProcessor {
@@ -67,7 +67,7 @@ namespace DMDA {
 
 		/**
 		 * Use this to init DMDA Context. You should call this in your
-		 * construct function.
+		 * constructor.
 		 */
 		void initContext();
 
