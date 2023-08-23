@@ -4,8 +4,8 @@
  *
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    July 2023
- * \version 1.0.0
+ * \date    Aug 2023
+ * \version 1.1.0
  * \license	MIT License
  *********************************************************************/
 
@@ -25,7 +25,11 @@ namespace DMDA {
 		/**
 		 * Get the reference of the data.
 		 */
-		juce::MidiFile& getData();
+		const juce::MidiFile& getData() const;
+		/**
+		 * Set data.
+		 */
+		void setData(const juce::MidiFile& data);
 		/**
 		 * Get the reference of the read write lock.
 		 */
