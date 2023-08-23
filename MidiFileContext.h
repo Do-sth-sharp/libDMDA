@@ -5,7 +5,7 @@
  * \author  WuChang
  * \email   31423836@qq.com
  * \date    Aug 2023
- * \version 1.1.0
+ * \version 1.2.0
  * \license	MIT License
  *********************************************************************/
 
@@ -25,18 +25,18 @@ namespace DMDA {
 		/**
 		 * Get the reference of the data.
 		 */
-		const juce::MidiFile& getData() const;
+		juce::MidiFile* getData() const;
 		/**
 		 * Set data.
 		 */
-		void setData(const juce::MidiFile& data);
+		void setData(juce::MidiFile* data);
 		/**
 		 * Get the reference of the read write lock.
 		 */
 		juce::ReadWriteLock& getLock() const;
 
 	private:
-		juce::MidiFile data;
+		juce::MidiFile* ptrData = nullptr;
 		mutable juce::ReadWriteLock lock;
 
 		JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MidiFileContext)
