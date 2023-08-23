@@ -5,18 +5,18 @@
  * \author  WuChang
  * \email   31423836@qq.com
  * \date    Aug 2023
- * \version 1.2.0
+ * \version 1.2.1
  * \license	MIT License
  *********************************************************************/
 
 #include "MidiFileContext.h"
 
 namespace DMDA {
-	juce::MidiFile* MidiFileContext::getData() const {
+	const juce::MidiFile* MidiFileContext::getData() const {
 		return this->ptrData;
 	}
 
-	void MidiFileContext::setData(juce::MidiFile* data) {
+	void MidiFileContext::setData(const juce::MidiFile* data) {
 		this->ptrData = data;
 	}
 
