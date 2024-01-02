@@ -1,11 +1,11 @@
-/*****************************************************************//**
+﻿/*****************************************************************//**
  * \file    Context.h
  * \brief   Directly Musical Data Access library for VST3 with JUCE.
  *
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    July 2023
- * \version 1.0.0
+ * \date    Jan 2024
+ * \version 1.2.3
  * \license	MIT License
  *********************************************************************/
 
@@ -19,7 +19,7 @@ namespace DMDA {
 	 * 
 	 * You can inherit this to create your own context types.
 	 */
-	class Context {
+	class DMDA_API Context {
 	public:
 		Context() = default;
 		virtual ~Context();
@@ -31,7 +31,7 @@ namespace DMDA {
 		 * You can inhert this in DMDA host then pass the object pointer
 		 * to Context::addListener() method to listen the change of the context.
 		 */
-		class Listener {
+		class DMDA_API Listener {
 		public:
 			virtual ~Listener() = default;
 

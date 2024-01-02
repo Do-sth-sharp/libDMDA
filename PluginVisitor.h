@@ -1,11 +1,11 @@
-/*****************************************************************//**
+﻿/*****************************************************************//**
  * \file    PluginVisitor.h
  * \brief   Directly Musical Data Access library for VST3 with JUCE.
  *
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    July 2023
- * \version 1.0.0
+ * \date    Jan 2024
+ * \version 1.2.3
  * \license	MIT License
  *********************************************************************/
 
@@ -25,7 +25,7 @@ namespace DMDA {
 	 * You can pass it to AudioPluginInstance::getExtensions() 
 	 * then the handleContext() method could be invoked.
 	 */
-	class PluginVisitor : public juce::ExtensionsVisitor {
+	class DMDA_API PluginVisitor : public juce::ExtensionsVisitor {
 	public:
 		virtual ~PluginVisitor() override = default;
 		/**
@@ -57,7 +57,7 @@ namespace DMDA {
 	 *	thePluginInstance->getExtensions(handler);
 	 * @endcode
 	 */
-	class PluginHandler final : public PluginVisitor {
+	class DMDA_API PluginHandler final : public PluginVisitor {
 	public:
 		PluginHandler() = delete;
 		PluginHandler(std::function<void(Context*)> function);

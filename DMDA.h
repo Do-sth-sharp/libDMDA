@@ -4,8 +4,8 @@
  * 
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    Dec 2023
- * \version 1.2.2
+ * \date    Jan 2024
+ * \version 1.2.3
  * \license	MIT License
  *********************************************************************/
 
@@ -15,7 +15,7 @@
 #include "Context.h"
 #include "MidiFileContext.h"
 
-#define DMDA_VERSION "1.2.2"
+#define DMDA_VERSION "1.2.3"
 
 #if DMDA_PLUGIN
 

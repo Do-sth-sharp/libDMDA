@@ -1,11 +1,11 @@
-/*****************************************************************//**
+﻿/*****************************************************************//**
  * \file    MidiFileContext.h
  * \brief   Directly Musical Data Access library for VST3 with JUCE.
  *
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    Aug 2023
- * \version 1.2.1
+ * \date    Jan 2024
+ * \version 1.2.3
  * \license	MIT License
  *********************************************************************/
 
@@ -18,7 +18,7 @@ namespace DMDA {
 	/**
 	 * The DMDA context with juce::MidiFile data.
 	 */
-	class MidiFileContext : public Context {
+	class DMDA_API MidiFileContext : public Context {
 	public:
 		MidiFileContext() = default;
 

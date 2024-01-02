@@ -1,11 +1,11 @@
-/*****************************************************************//**
+﻿/*****************************************************************//**
  * \file    PluginProcessor.h
  * \brief   Directly Musical Data Access library for VST3 with JUCE.
  *
  * \author  WuChang
  * \email   31423836@qq.com
- * \date    July 2023
- * \version 1.0.2
+ * \date    Jan 2024
+ * \version 1.2.3
  * \license	MIT License
  *********************************************************************/
 
@@ -37,7 +37,7 @@ namespace DMDA {
 	 * And you should call initContext() method in your constructor to
 	 * create the context.
 	 */
-	class PluginProcessor : public juce::AudioProcessor {
+	class DMDA_API PluginProcessor : public juce::AudioProcessor {
 	public:
 		PluginProcessor();
 		PluginProcessor(
